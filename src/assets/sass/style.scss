@@ -1,0 +1,76 @@
+
+// 
+
+@import './color';
+@import './fonts';
+@import './images';
+@import './footer';
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    direction: ltr;
+    font-family: $font-write;
+    font-size: 15px;
+}
+
+// Style navbar
+
+header.top_header {
+    background-image: url(../images/header_top.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header.top_header nav button.navbar-toggler {
+    background-color: $color-filter;
+    color: $color-oldlace;
+}
+
+header.top_header nav ul {
+    padding: 0;
+}
+
+header.top_header nav ul li a {
+    color: $color-black;
+    transition: all 0.5s ease-in-out;
+}
+
+header.top_header nav ul li a:hover,
+header.top_header nav ul li a:focus,
+header.top_header nav ul li a:active {
+    background: linear-gradient(45deg, $color-purple, $color-transition);
+    color: $color-wheat;
+    border-radius: 3px;
+}
+
+.title h4.custom-title {
+    margin: 35px 0;
+}
+
+// Custom btn links
+
+a.btn-custom {
+    text-decoration: none;
+    font-family: $font-write;
+    background: linear-gradient(45deg, $color-purple, $color-transition);
+    color: $color-white;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+a.btn-custom:hover,
+a.btn-custom:active,
+a.btn-custom:focus {
+    color: $color-wheat;
+}
+
+// Filter Color
+
+.bg-color {
+    background: $color-filter;
+    padding: 40px;
+}

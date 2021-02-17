@@ -1,0 +1,55 @@
+@font-face {
+    src: url(../fonts/NotoSansHK-content.otf);
+    font-family: "ar-content";
+}
+
+@font-face {
+    src: url(../fonts/FredokaOne-heading.ttf);
+    font-family: "ar-heading";
+}
+
+@font-face {
+    src: url(../fonts/JFFlatregular.ttf);
+    font-family: "ar-font";
+}
+
+$font-write: "ar-content";
+$font-heading: "ar-heading";
+$font-lang: "ar-font";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+    font-family: $font-heading;
+}
+
+p,
+span,
+li,
+body,
+a,
+option {
+    font-family: $font-write;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+small {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+tr,
+td {
+    font-family: $font-write;
+}
